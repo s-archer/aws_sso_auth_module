@@ -12,9 +12,3 @@ resource "null_resource" "aws_sso" {
     command = "chmod +x ${path.root}/sso_auth.sh && ${path.root}/sso_auth.sh"
   }
 }
-
-variable "region" {}
-
-output "region" {
-  value = var.region
-}
